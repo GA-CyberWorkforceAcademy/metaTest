@@ -1,0 +1,12 @@
+.vagrant/
+packer_cache/
+packer/builds/
+resources/drivers/
+*.vfd
+*.exe
+*.msi
+*.msu
+*.DS_Store
+*.box
+*.iso
+*.vfd
