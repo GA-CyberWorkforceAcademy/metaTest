@@ -8,6 +8,8 @@ include_recipe 'metasploitable::apache'
 include_recipe 'metasploitable::mysql'
 include_recipe 'metasploitable::php_545'
 
+package 'unzip'
+
 drupal_tar    = "drupal-#{node[:drupal][:version]}.tar.gz"
 coder_tar     = "coder-7.x-2.5.tar.gz"
 files_path    = File.join(Chef::Config[:file_cache_path], 'cookbooks', 'metasploitable', 'files', 'drupal')
@@ -41,11 +43,9 @@ execute 'untar drupal' do
   only_if { Dir["#{node[:drupal][:install_dir]}/*"].empty? }
 end
 
-execute 'untar default site' do
+execute 'unzip default site' do
   cwd node[:drupal][:sites_dir]
-  command "tar xvzf #{File.join(files_path, 'default_site.tar.gz')}"
-  not_if { ::File.exists?(File.join(node[:drupal][:default_site_dir], 'settings.php')) }
-  not_if { ::File.directory?(File.join(node[:drupal][:default_site_dir], 'files')) }
+  command "unzip /metaTest/chef/cookbooks/metasploitable/files/drupal/default_site.zip"
 end
 
 execute 'untar coder module' do
