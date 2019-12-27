@@ -3,7 +3,6 @@
 # Attributes:: default
 #
 default[:metasploitable][:docker_users] = ['Adam_Garrett',
-                                           'Derrell_Wells',
                                            'Dennis_Bishop',
                                            'Beth_Carpenter',
                                            'Vicky_Hamilton']
