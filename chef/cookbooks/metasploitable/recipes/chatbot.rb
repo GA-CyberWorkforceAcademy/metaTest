@@ -29,7 +29,6 @@ execute 'unzip chatbot' do
   notifies :run, 'execute[chown chatbot]', :immediately
   notifies :run, 'execute[chmod chatbot]', :immediately
   notifies :run, 'execute[install chatbot]', :immediately
-  command 'unzip /opt/chatbot/*.zip -d /opt/chatbot/'
 end
 
 execute 'chown chatbot' do
@@ -38,6 +37,10 @@ end
 
 execute 'chmod chatbot' do
   command 'chmod -R 700 /opt/chatbot'
+end
+
+execute 'unzip chatbot files' do
+  command 'unzip /opt/chatbot/*.zip -d /opt/chatbot'
 end
 
 execute 'install chatbot' do
