@@ -17,7 +17,7 @@ git '/opt/readme_app' do
 end
 
 directory '/opt/readme_app' do
-  owner 'chewbacca'
+  owner 'Adam_Garrett'
   group 'users'
   mode '0644'
 end
@@ -34,7 +34,7 @@ end
 bash 'set permissions' do
   cwd '/opt/readme_app'
   code <<-EOH
-    chown -R chewbacca:users .
+    chown -R Adam_Garrett:users .
     git ls-files | xargs chmod 0644
     git ls-files | xargs -n 1 dirname | uniq | xargs chmod 755
     chmod 0755 ./start.sh
