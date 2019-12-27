@@ -16,7 +16,7 @@ remote_file "#{Chef::Config[:file_cache_path]}/#{unreal_tar}" do
 end
 
 directory node[:unrealircd][:install_dir] do
-  owner 'boba_fett'
+  owner 'Wille_Barnes'
   recursive true
   mode '0100'
 end
@@ -39,13 +39,13 @@ end
 
 cookbook_file '/opt/unrealircd/Unreal3.2/unrealircd.conf' do
   source 'unrealircd/unrealircd.conf'
-  owner 'boba_fett'
+  owner 'Willie_Barnes'
   mode '0400'
 end
 
 cookbook_file '/opt/unrealircd/Unreal3.2/ircd.motd' do
   source 'unrealircd/ircd.motd'
-  owner 'boba_fett'
+  owner 'Wille_Barnes'
   mode '0400'
 end
 
@@ -59,7 +59,7 @@ bash 'configure and compile' do
 end
 
 execute 'set owner and permissions' do
-  command "chown -R boba_fett #{node[:unrealircd][:install_dir]}"
+  command "chown -R Willie_Barnes #{node[:unrealircd][:install_dir]}"
   user 'root'
   action :run
 end
