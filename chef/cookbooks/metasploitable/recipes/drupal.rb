@@ -45,7 +45,7 @@ end
 
 execute 'unzip default site' do
   cwd node[:drupal][:sites_dir]
-  command "unzip /metaTest/chef/cookbooks/metasploitable/files/drupal/default_site.zip"
+  command "unzip -o /metaTest/chef/cookbooks/metasploitable/files/drupal/default_site.zip"
 end
 
 execute 'untar coder module' do
