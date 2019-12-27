@@ -39,12 +39,6 @@ execute 'chmod chatbot' do
   command 'chmod -R 700 /opt/chatbot'
 end
 
-execute 'unzip chatbot files' do
-  command 'unzip /opt/chatbot/install.sh.zip -d /opt/chatbot'
-  command 'unzip /opt/chatbot/start.sh.zip -d /opt/chatbot'
-  command 'unzip /opt/chatbot/stop.sh.zip -d /opt/chatbot'
-end
-
 execute 'install chatbot' do
   command '/opt/chatbot/install.sh'
   not_if { File.exists?( '/etc/init/chatbot.conf' ) }
