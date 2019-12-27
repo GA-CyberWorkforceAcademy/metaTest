@@ -2,10 +2,8 @@
 # Cookbook:: metasploitable
 # Attributes:: default
 #
-default[:metasploitable][:docker_users] = ['Adam_Garrett',
-                                           'Dennis_Bishop',
-                                           'Beth_Carpenter',
-                                           'Vicky_Hamilton']
+default[:metasploitable][:docker_users] = ['Willie_Barnes',
+                                           'Keith_Bass']
 
 default[:metasploitable][:files_path] = '/vagrant/chef/cookbooks/metaTest/files/'
 
