@@ -1,6 +1,6 @@
 <?php
 
-$conn = new mysqli('127.0.0.1', 'root', 'sploitme', 'payroll');
+$conn = new mysqli('127.0.0.1', 'root', 'gmips123', 'payroll');
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }

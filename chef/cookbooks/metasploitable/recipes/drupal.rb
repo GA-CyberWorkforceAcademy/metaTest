@@ -43,11 +43,6 @@ execute 'untar drupal' do
   only_if { Dir["#{node[:drupal][:install_dir]}/*"].empty? }
 end
 
-execute 'unzip default site' do
-  cwd node[:drupal][:sites_dir]
-  command "unzip -o /metaTest/chef/cookbooks/metasploitable/files/drupal/default_site.zip"
-end
-
 execute 'untar coder module' do
   cwd File.join(node[:drupal][:all_site_dir], 'modules')
   command "tar xvzf #{Chef::Config[:file_cache_path]}/#{coder_tar}"
@@ -60,9 +55,10 @@ end
 
 bash "create drupal database and inject data" do
   code <<-EOH
-    mysql -h 127.0.0.1 --user="root" --password="sploitme" --execute="CREATE DATABASE drupal;"
-    mysql -h 127.0.0.1 --user="root" --password="sploitme" --execute="GRANT SELECT, INSERT, DELETE, CREATE, DROP, INDEX, ALTER ON drupal.* TO 'root'@'localhost' IDENTIFIED BY 'sploitme';"
-    mysql -h 127.0.0.1 --user="root" --password="sploitme" drupal < #{File.join(files_path, 'drupal.sql')}
+    mysql -h 127.0.0.1 --user="root" --password="gmips123" --execute="CREATE DATABASE drupal;"
+    mysql -h 127.0.0.1 --user="root" --password="gmips123" --execute="GRANT SELECT, INSERT, DELETE, CREATE, DROP, INDEX, ALTER ON drupal.* TO 'root'@'localhost' IDENTIFIED BY 'gmips123';"
+	mysql -h 127.0.0.1 --user="Vanessa.Cohen" --password="Y7lNl" --execute="GRANT SELECT, INSERT, DELETE, CREATE, DROP, INDEX, ALTER ON drupal.* TO 'Vanessa.Coehn'@'localhost' IDENTIFIED BY 'Y7lNl';"
+	mysql -h 127.0.0.1 --user="root" --password="gmips123" drupal < #{File.join(files_path, 'drupal.sql')}
   EOH
-  not_if "mysql -h 127.0.0.1 --user=\"root\" --password=\"sploitme\" --execute=\"SHOW DATABASES LIKE 'drupal'\" | grep -c drupal"
+  not_if "mysql -h 127.0.0.1 --user=\"root\" --password=\"gmips123\" --execute=\"SHOW DATABASES LIKE 'drupal'\" | grep -c drupal"
 end

@@ -1,1 +1,1 @@
-default[:mysql][:root_password] = 'sploitme'
+default[:mysql][:root_password] = 'gmips123'
