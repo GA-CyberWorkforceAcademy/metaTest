@@ -35,7 +35,7 @@ if (!isset($_POST['s'])) {
 if($_POST['s']){
     $user = $_POST['user'];
     $pass = $_POST['password'];
-    $sql = "select username, first_name, last_name, salary from users where username = '$user' and password = '$pass'";
+    $sql = "select username, first_name, last_name, salary, acctnum from users where username = '$user' and password = '$pass'";
 
     if ($conn->multi_query($sql)) {
         do {
