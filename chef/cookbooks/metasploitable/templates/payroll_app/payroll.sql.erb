@@ -33,17 +33,18 @@ CREATE TABLE `users` (
   `first_name` varchar(30) COLLATE utf8mb4_unicode_ci NOT NULL,
   `last_name` varchar(30) COLLATE utf8mb4_unicode_ci NOT NULL,
   `password` varchar(40) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `salary` int(20) NOT NULL
+  `salary` int(20) NOT NULL,
+  `acctnum` int(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`username`, `first_name`, `last_name`, `password`, `salary`) VALUES
+INSERT INTO `users` (`username`, `first_name`, `last_name`, `password`, `salary`, `acctnum`) VALUES
 <%= values = ""
     node[:users].keys.each do |u|
-      values << "('#{node[:users][u][:username]}', '#{node[:users][u][:first_name]}', '#{node[:users][u][:last_name]}', '#{node[:users][u][:password]}', '#{node[:users][u][:salary]}'),"
+      values << "('#{node[:users][u][:username]}', '#{node[:users][u][:first_name]}', '#{node[:users][u][:last_name]}', '#{node[:users][u][:password]}', '#{node[:users][u][:salary]}', '#{node[:users][u][:acctnum]}'),"
     end
     values[0...-1]
 %>;

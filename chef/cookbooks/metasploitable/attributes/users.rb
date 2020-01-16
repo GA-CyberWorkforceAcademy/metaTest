@@ -9,7 +9,8 @@ default[:users][:Adam_Garrett] = { username: 'Adam_Garrett',
                                   first_name: 'Adam',
                                   last_name: 'Garrett',
                                   admin: true,
-                                  salary: '79560' }
+                                  salary: '79560',
+								  acctnum: '12300911'}
 
 default[:users][:Darrell_Wells] = { username: 'Darrell_Wells',
                                      password: 'poki5',
@@ -17,7 +18,8 @@ default[:users][:Darrell_Wells] = { username: 'Darrell_Wells',
                                      first_name: 'Darrell',
                                      last_name: 'Wells',
                                      admin: true,
-                                     salary: '100080'}
+                                     salary: '100080',
+									 acctnum: '92300915'}
 
 default[:users][:Dennis_Bishop] = { username: 'Dennis_Bishop',
                                password: 'rS459',
@@ -25,7 +27,8 @@ default[:users][:Dennis_Bishop] = { username: 'Dennis_Bishop',
                                first_name: 'Dennis',
                                last_name: 'Bishop',
                                admin: true,
-                               salary: '120600'}
+                               salary: '120600',
+							   acctnum: '52300331'}
 
 default[:users][:Willie_Barnes] = { username: 'Willie_Barnes',
                                   password: 'bYibp',
@@ -33,7 +36,8 @@ default[:users][:Willie_Barnes] = { username: 'Willie_Barnes',
                                   first_name: 'Willie',
                                   last_name: 'Barnes',
                                   admin: false,
-                                  salary: '56222'}
+                                  salary: '56222',
+								  acctnum: '89500921'}
 
 default[:users][:Beth_Carpenter] = { username: 'Beth_Carpenter',
                                   password: 'em2L5',
@@ -41,7 +45,8 @@ default[:users][:Beth_Carpenter] = { username: 'Beth_Carpenter',
                                   first_name: 'Beth',
                                   last_name: 'Carpenter',
                                   admin: true,
-                                  salary: '131200'}
+                                  salary: '131200',
+								  acctnum: '77900922'}
 
 default[:users][:Rhonda_Zimmerman] = { username: 'Rhonda_Zimmerman',
                                  password: 'pQQc8',
@@ -49,7 +54,8 @@ default[:users][:Rhonda_Zimmerman] = { username: 'Rhonda_Zimmerman',
                                  first_name: 'Rhonda',
                                  last_name: 'Zimmerman',
                                  admin: false,
-                                 salary: '78000'}
+                                 salary: '78000',
+								 acctnum: '01300972'}
 
 default[:users][:Keith_Bass] = { username: 'Keith_Bass',
                                   password: '02y6w',
@@ -57,7 +63,8 @@ default[:users][:Keith_Bass] = { username: 'Keith_Bass',
                                   first_name: 'Keith',
                                   last_name: 'Bass',
                                   admin: false,
-                                  salary: '66812'}
+                                  salary: '66812',
+								  acctnum: '82300771'}
 
 default[:users][:Cory_Hernandez] = { username: 'Cory_Hernandez',
                                        password: '81P0Z:(',
@@ -65,7 +72,8 @@ default[:users][:Cory_Hernandez] = { username: 'Cory_Hernandez',
                                        first_name: 'Cory',
                                        last_name: 'Hernndez',
                                        admin: false,
-                                       salary: '100125'}
+                                       salary: '100125',
+									   acctnum: '52366318'}
 
 default[:users][:Frances_Estrada] = { username: 'Frances_Estrada',
                                    password: '4y4gy',
@@ -73,7 +81,8 @@ default[:users][:Frances_Estrada] = { username: 'Frances_Estrada',
                                    first_name: 'Frances',
                                    last_name: 'Estrada',
                                    admin: false,
-                                   salary: '52048'}
+                                   salary: '52048',
+								   acctnum: '02005514'}
 
 default[:users][:Jimmie_Potter] = { username: 'Jimmie_Potter',
                                        password: 'kDeg3',
@@ -81,7 +90,8 @@ default[:users][:Jimmie_Potter] = { username: 'Jimmie_Potter',
                                        first_name: 'Jimmie',
                                        last_name: 'Potter',
                                        admin: false,
-                                       salary: '40000'}
+                                       salary: '40000',
+									   acctnum: '58300902'}
 
 default[:users][:Vicky_Hamilton] = { username: 'Vicky_Hamilton',
                                 password: 'BxARG',
@@ -89,7 +99,8 @@ default[:users][:Vicky_Hamilton] = { username: 'Vicky_Hamilton',
                                 first_name: 'Vicky',
                                 last_name: 'Hamiliton',
                                 admin: true,
-                                salary: '251000'}
+                                salary: '251000',
+								acctnum: '88730091'}
 
 default[:users][:Vanessa_Cohen] = { username: 'Vanessa_Cohen',
                                  password: 'Y71N1',
@@ -97,4 +108,5 @@ default[:users][:Vanessa_Cohen] = { username: 'Vanessa_Cohen',
                                  first_name: 'Vanessa',
                                  last_name: 'Cohen',
                                  admin: false,
-                                 salary: '65000'}
+                                 salary: '65000',
+								 acctnum: '06307431'}

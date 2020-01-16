@@ -43,7 +43,7 @@ if($_POST['s']){
             echo "<center>";
             echo "<h2>Welcome, " . $user . "</h2><br>";
             echo "<table style='border-radius: 25px; border: 2px solid black;' cellspacing=30>";
-            echo "<tr><th>Username</th><th>First Name</th><th>Last Name</th><th>Salary</th></tr>";
+            echo "<tr><th>Username</th><th>First Name</th><th>Last Name</th><th>Salary</th><th>Acct Number</th></tr>";
             if ($result = $conn->store_result()) {
                 while ($row = $result->fetch_assoc()) {
                     $keys = array_keys($row);
