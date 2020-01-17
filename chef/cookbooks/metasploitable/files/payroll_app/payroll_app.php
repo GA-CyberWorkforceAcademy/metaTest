@@ -11,7 +11,8 @@ if (!isset($_POST['s'])) {
 ?>
 <center>
 <form action="" method="post">
-<h2>Payroll Login</h2>
+<h2>GMIPS Payroll Login</h2>
+<img src="https://github.com/GA-CyberWorkforceAcademy/metaTest/raw/master/SO_edits/GMIPS_logo.PNG" width="280" height="125" title="GMIIPS" alt="GMIPS" />
 <table style="border-radius: 25px; border: 2px solid black; padding: 20px;">
     <tr>
         <td>User</td>
